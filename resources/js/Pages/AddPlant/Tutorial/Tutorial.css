@@ -1,17 +1,12 @@
 .app-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    padding: 20px;
+    padding: 0 20px;
     box-sizing: border-box;
 }
 
-h1 {
-    margin-bottom: 20px;
-}
-
 .chapter {
-    margin-bottom: 20px;
+
 }
 
 .chapter:last-child {
@@ -20,6 +15,38 @@ h1 {
 
 h2 {
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
-/* Ajoutez ici d'autres styles selon vos préférences */
+p {
+    padding-left: 15px;
+}
+
+.start-btn-container {
+    position: fixed; /* Fixe le conteneur du bouton en bas de la page */
+    left: 0;
+    right: 0; /* Ces deux propriétés centrent le bouton horizontalement */
+    bottom: 80px; /* Espace depuis le bas de la page, augmenté pour le remonter */
+    text-align: center; /* Centre le bouton dans le conteneur */
+
+}
+
+.start-btn {
+    display: inline-block; /* Nécessaire pour appliquer des marges/paddings */
+    padding: 15px 30px; /* Ajustez ces valeurs selon la taille souhaitée */
+    font-size: 18px; /* Taille du texte */
+    background-color: #A3DA05; /* Couleur du fond */
+    color: black; /* Couleur du texte */
+    text-decoration: none; /* Enlève le soulignement du lien */
+    border-radius: 15px; /* Arrondit les bords */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre subtile pour un effet 3D */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    min-width: 200px;
+}
+
+.start-btn:hover {
+    background-color: #A3DA05; /* Couleur de fond au survol */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée pour le survol */
+}
+
+

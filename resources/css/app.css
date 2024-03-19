@@ -2,7 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Veselina';
+    src: url('../fonts/veselina.otf') format('opentype'),
+    url('../fonts/veselina.otf') format('opentype');
+}
+
 
 h1 {
-   font-size: 50px;
+    font-family: 'Veselina', sans-serif;
+    font-size: 28px;
 }
+
+
